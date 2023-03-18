@@ -5,7 +5,7 @@ description: farout
 tags: 'test, new, try'
 cover_image: ./assets/cat1.jpg
 canonical_url: null
-id: 15
+# id: 1
 date: '2023-03-18T23:58:21Z'
 ---
 
@@ -15,4 +15,4 @@ Hello World !!!
 
 work in progress
 
-![and some pictures too](./assets/cat.jpg)
+![and some pictures too](./assets/cat1.jpg)

@@ -1,16 +1,17 @@
----
-title: Example article title
+title: Hello World 3
 published: false
-description: A simple test article
+description: test2121
 tags: 'productivity, beginners, test'
 cover_image: ./assets/cat.jpg
 canonical_url: null
+id: 1
+date: '2023-03-18T20:47:21Z'
 ---
 
-Some random text with a [link](https://code.visualstudio.com).
+Hello World !!!
 
-## Serious title
+## Kick start tests
 
-Add some text here and there!
+work in progress
 
 ![and some pictures too](./assets/cat.jpg)

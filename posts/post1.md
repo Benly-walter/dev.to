@@ -1,5 +1,5 @@
 ---
-title: Far Out1
+title: Far Out
 published: false
 description: Tech Flake 001 - Far Out
 tags: 'test, new, try'

@@ -5,8 +5,8 @@ description: Tech Flake 001 - Far Out
 tags: 'test, new, try'
 cover_image: ./assets/cat1.jpg
 canonical_url: null
-# id: 1
-# date: '2023-03-18T23:58:21Z'
+date: '2023-03-18T23:58:21Z'
+id: 1406195
 ---
 
 Hello World !!!

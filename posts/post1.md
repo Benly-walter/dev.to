@@ -3,7 +3,7 @@ title: Far Out
 published: false
 description: Tech Flake 001 - Far Out
 tags: 'test, new, try'
-cover_image: ./assets/001-birds.jpg
+cover_image: ./assets/001-vintage-typewriting.jpg
 canonical_url: null
 date: '2023-03-18T23:58:21Z'
 id: 1406195

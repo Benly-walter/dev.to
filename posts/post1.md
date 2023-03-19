@@ -23,7 +23,7 @@ work in progress
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-![Alt Text](./assets/001-gears.gif){: width=400 height=400 duration=10 }
+![GIF Example](./assets/001-gears.gif)
 
 Three or more...
 

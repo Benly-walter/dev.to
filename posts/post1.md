@@ -14,6 +14,12 @@ Hello World !!!
 
 ## Kick start tests
 
+## Table Of Contents
+* [Chapter 1](#chapter-1)
+* [Chapter 2](#chapter-2)
+
+### Chapter 1 <a name="chapter-1"></a>
+
 work in progress
 
 ![and some pictures too](./assets/cat1.jpg)

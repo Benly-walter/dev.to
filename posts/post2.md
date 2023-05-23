@@ -5,8 +5,6 @@ description: Tech Flake 002 - Pipeline automation - Zero downtime AKS upgrades
 tags: 'aks, azure pipelines, rancher, powershell, k8s'
 cover_image: ./assets/001-birds.jpg
 canonical_url: null
-date: ''
-id: 
 ---
 
 Upgrading an AKS cluster can sometimes be a major footgun. There are several reasons why an upgrade of your cluster could fail. Achieving zero downtime on your cluster upgrades requires careful planning specific to your design implementation. A few years back, when me and my team started out with Kubernetes / AKS, we followed the manual approach of upgrading the cluster in a sequential manner basing the steps outlined below

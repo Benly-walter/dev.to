@@ -2,7 +2,7 @@
 title: Pipeline automation - Zero downtime AKS upgrades with Rancher
 published: false
 description: Tech Flake 002 - Pipeline automation - Zero downtime AKS upgrades
-tags: 'aks'
+tags: aks
 cover_image: ./assets/001-vintage-typewriting.jpg
 canonical_url: null
 date: '2023-05-27T23:37:21Z'

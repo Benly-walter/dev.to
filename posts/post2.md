@@ -6,3 +6,9 @@ tags: 'aks, azurepipelines, rancher, powershell, k8s'
 cover_image: ./assets/001-vintage-typewriting.jpg
 canonical_url: null
 ---
+
+<!-- 001-birds.jpg   https://pixabay.com/photos/birds-tree-animals-silhouette-4395443/ -->
+
+Hello World !!!
+
+## Kick start tests

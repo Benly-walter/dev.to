@@ -1,9 +1,9 @@
 ---
-title: Pipeline automation - Zero downtime AKS upgrades
+title: Pipeline automation - Zero downtime AKS upgrades with Rancher
 published: false
 description: Tech Flake 002 - Pipeline automation - Zero downtime AKS upgrades
 tags: 'aks, azure pipelines, rancher, powershell, k8s'
-cover_image: ./assets/001-birds.jpg
+cover_image: ./assets/001-vintage-typewriting.jpg
 canonical_url: null
 ---
 
@@ -27,7 +27,7 @@ Upgrading an AKS cluster can sometimes be a major footgun. There are several rea
 - deprecated APIs for workloads that were not tested before the upgrade.
 - compatibility issues. The new version of AKS may introduce changes that are not compatible with your existing workloads, applications, or configurations.  -->
 
-Over time, the number of AKS clusters that had to be managed grew in number and we started looking at ways to automate the entire upgrade workflow. PowerShell was our tool of choice in this quest. The initial versions of our upgrade script used native kubectl commands alongside the powershell Az Aks commands. This was very clunky as the script execution was dependent on the local kubeconfig profile configuration that has been used for managing the kubernetes clusters. We also had security implications when reviewing the possibilities of running the script on self-hosted azure devops agents with azure pipelines. Changing the cluster context was not allowed while running the script locally. Accidentally changing your k8s cluster context during the script run was dangerous as this led to unitended AKS clusters being cordoned, drained etc. A smarter workflow had to be thought of.
+Over time, the number of AKS clusters that had to be managed grew in number and we started looking at ways to automate the entire upgrade workflow. PowerShell was our tool of choice in this quest. The initial versions of our upgrade script used native kubectl commands alongside the powershell Az Aks commands. This was very clunky as the script execution was dependent on the kubeconfig profile configuration of the user running the script. Changing the cluster context was not allowed while running the script locally. Accidentally changing your k8s cluster context during the script run was dangerous as this led to unitended AKS clusters being cordoned, drained etc. We also had security implications when reviewing the possibilities of running the script on self-hosted azure devops agents with azure pipelines. A smarter workflow had to be thought of.
 
 We had a solution to our woes in Rancher. If you have not checked out Rancher, I suggest to have a look here. It is an open source software and provides a central platform for management of all your k8s clusters (AKS, k3s, etc.). There are a plenty of benefits for managing kubernetes using Rancher. Some of them in our case have been listed below
 

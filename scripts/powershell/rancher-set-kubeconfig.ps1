@@ -23,7 +23,7 @@ begin {
     $ErrorActionPreference = 'Stop'
 
     # import Rancher Functions
-    Import-Module -Name ../../modules/rancher.psm1 -Function 'Get-RancherClusterAll', 'Get-RancherClusterInfo', 'Get-RancherKubeConfig', 'Merge-KubeConfigFromRancher' -Force -Verbose
+    Import-Module -Name ./rancher.psm1 -Function 'Get-RancherClusterAll', 'Get-RancherClusterInfo', 'Get-RancherKubeConfig', 'Merge-KubeConfigFromRancher' -Force -Verbose
 
     # Set the default kubeconfig path based on the operating system
     if ($IsWindows) {

@@ -33,9 +33,6 @@ work in progress
 
 ![GIF Example](./assets/001-gears.gif)
 
-Time to sip on some tea !!!
-
-![GIF Example](./assets/001-tea.gif)
 
 Three or more...
 

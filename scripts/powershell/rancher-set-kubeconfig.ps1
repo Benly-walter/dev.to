@@ -23,7 +23,7 @@ begin {
     $ErrorActionPreference = 'Stop'
 
     # import Rancher Functions
-    Import-Module -Name rancher.psm1 -Force -Verbose
+    Import-Module -Name rancher.psm1 -Function Get-RancherClusterAll Get-RancherClusterInfo Get-RancherKubeConfig Merge-KubeConfigFromRancher -Force -Verbose
 
     # Set the default kubeconfig path based on the operating system
     if ($IsWindows) {
@@ -40,6 +40,12 @@ begin {
     # Set default kubeConfigPath if not provided by user
     if ([string]::IsNullOrWhiteSpace($KubeconfigFilePath)) {
         $KubeconfigFilePath = $DefaultKubeconfigPath
+    }
+
+    # Check and create kubeconfig file if not present
+    if (-not (Test-Path -Path $KubeconfigFilePath)) {
+        Write-Output "Kubeconfig file not found at $KubeconfigFilePath. Creating an empty file..."
+        New-Item -ItemType File -Path $KubeconfigFilePath -Force | Out-Null
     }
 
     # Backup existing config file (switch)

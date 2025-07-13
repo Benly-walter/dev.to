@@ -1,7 +1,7 @@
 ---
-title: Far Out
+title: Far Out testing
 published: false
-description: Tech Flake 001 - Far Out
+description: Tech Flake 001 - Far Out testing
 tags: 'test, new, try'
 cover_image: ./assets/001-birds.jpg
 canonical_url: null
@@ -56,13 +56,13 @@ Underscores
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
- 
+
 ```python
 s = "Python syntax highlighting"
 print s
 ```
- 
+
 ```
-No language indicated, so no syntax highlighting. 
+No language indicated, so no syntax highlighting.
 But let's throw in a <b>tag</b>.
 ```
